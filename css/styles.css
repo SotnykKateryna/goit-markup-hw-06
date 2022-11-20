@@ -205,6 +205,8 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   margin: auto;
+
+  outline: none;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -281,14 +283,25 @@ p {
 
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
+  outline: none;
+  color: var(--black-color);
+  background-color: var(--white-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-button {
-  fill: #000000;
+  fill: currentColor;
+}
+
+.button-close:hover,
+.button-close:focus {
+  color: var(--accent-color);
 }
 
 .modal-form-group {
@@ -428,6 +441,8 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   margin: auto;
+
+  outline: none;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -916,6 +931,8 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   margin: auto;
+
+  outline: none;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-family: inherit;
